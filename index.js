@@ -141,7 +141,7 @@ class Car {
    */
   drive(distance) {
     while (distance > 0 && this.tank-(1/this.mpg) > 0) { // while we still have enough left in the tank to go another mile
-      this.tank -= (1/(this.mpg));
+      this.tank -= (1/(this.mpg)).toFixed(6);
       distance--;
       this.odometer++;
     }

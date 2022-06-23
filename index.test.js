@@ -40,7 +40,7 @@ describe('[Exercise 3] findLargestInteger', () => {
                     { integer: 6 },
                     { integer: 5 },
                   ];
-    const expected = { number: 6 };
+    const expected = 6;
     const result = utils.findLargestInteger(input);
     expect(result).toEqual(expected);
   })

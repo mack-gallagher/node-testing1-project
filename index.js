@@ -42,15 +42,15 @@ function trimPropertiesMutation(obj) {
  */
 function findLargestInteger(integers) {
   if (integers.length < 1) {
-    return { number: -1 };
+    return -1;
   }
   const beginning_number = integers[0].integer;
   return integers.reduce((acc,x) => {
-      if (x.integer > acc.number) {
-        acc.number = x.integer;
+      if (x.integer > acc) {
+        acc = x.integer;
       }
       return acc;
-    },{ number: beginning_number });
+    },beginning_number);
 }
 
 class Counter {
